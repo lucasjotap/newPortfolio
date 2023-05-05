@@ -8,7 +8,7 @@ $grid-gutter-width: 40px !default;
 $border-radius-base: 4px !default;
 $padding-base-vertical: 14px !default;
 
-$brand-primary: #006eff !default;
+$brand-primary: #1666ce !default;
 
 $brand-white: #fff;
 $brand-black: #000;
@@ -859,11 +859,11 @@ figure {
 	display: table;
 	overflow: hidden;
 
-	@media screen and(max-width: $screen-sm) {
+	@media screen and (max-width: $screen-sm) {
 		height: 400px;
 	}
 
-	@media screen and(max-width: $screen-xs) {
+	@media screen and (max-width: $screen-xs) {
 		height: 270px;
 	}
 
@@ -893,7 +893,7 @@ figure {
 			transform: translate3d(0, 15px, 0);
 		}
 
-		@media screen and(max-width: $screen-sm) {
+		@media screen and (max-width: $screen-sm) {
 			opacity: 1;
 			background: rgba($brand-white, .6);
 
@@ -982,11 +982,11 @@ figure {
 		position: relative;
 		height: 300px;
 
-		@media screen and(max-width: $screen-sm) {
+		@media screen and (max-width: $screen-sm) {
 			height: 400px;
 		}
 
-		@media screen and(max-width: $screen-xs) {
+		@media screen and (max-width: $screen-xs) {
 			height: 270px;
 		}
 	}
@@ -1005,7 +1005,7 @@ figure {
 
 		@include transition(.3s);
 
-		@media screen and(max-width: $screen-sm) {
+		@media screen and (max-width: $screen-sm) {
 			padding: 10px;
 		}
 
@@ -1027,7 +1027,7 @@ figure {
 				display: inline-block;
 				margin-left: 10px;
 
-				@media screen and(max-width: $screen-sm) {
+				@media screen and (max-width: $screen-sm) {
 					font-size: 14px;
 				}
 
@@ -1093,7 +1093,7 @@ figure {
 		@include flex();
 		@include flexwrap();
 
-		@media screen and(max-width: $screen-sm) {
+		@media screen and (max-width: $screen-sm) {
 			display: none;
 		}
 	}
@@ -1102,7 +1102,7 @@ figure {
 		width: 50%;
 		padding: 4em;
 
-		@media screen and(max-width: $screen-sm) {
+		@media screen and (max-width: $screen-sm) {
 			width: 100%;
 			padding: 4em 1em;
 		}

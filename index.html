@@ -6,21 +6,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Profile &mdash; Lucas Pereira Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
-	<meta name="keywords"
-		content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="description" content="template" />
+	<meta name="keywords" content="template" />
 	<meta name="author" content="freehtml5.co" />
 
 	<!-- 
 	//////////////////////////////////////////////////////
 
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FreeHTML5.co
-		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
+	Developed by Lucas
 
 	//////////////////////////////////////////////////////
 	 -->
@@ -98,6 +91,7 @@
 					</div>
 				</div>
 				<div class="row">
+
 					<div class="col-md-4">
 						<ul class="info">
 							<li><span class="first-block">Nome:</span><span class="second-block">Lucas Pereira</span>
@@ -106,6 +100,7 @@
 							</li>
 						</ul>
 					</div>
+
 					<div class="col-md-8">
 						<h2>Bem Vindo!</h2>
 						<p>Desenvolvimento de software, algoritmos, dados e informação são assuntos pelo qual sou
@@ -120,6 +115,7 @@
 						</ul>
 						</p>
 					</div>
+
 				</div>
 			</div>
 		</div>
@@ -128,11 +124,13 @@
 		<div id="fh5co-features" class="animate-box">
 			<div class="container">
 				<div class="services-padding">
+
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 							<h2>Atuações</h2>
 						</div>
 					</div>
+
 					<div class="row">
 						<div class="col-md-4 text-center">
 							<div class="feature-left">
@@ -156,8 +154,8 @@
 									<p>Pipelines de ETL, Spark, SQL, Data Warehouses & Airflow</p>
 								</div>
 							</div>
-
 						</div>
+
 						<div class="col-md-4 text-center">
 							<div class="feature-left">
 								<span class="icon">
@@ -169,6 +167,7 @@
 								</div>
 							</div>
 						</div>
+
 					</div>
 				</div>
 			</div>
@@ -292,7 +291,8 @@
 				</div>
 
 				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://github.com/lucasjotap/dataCorrelation/blob/main/Project/.ipynb_checkpoints/dataAnalysis-checkpoint.ipynb" class="work" style="background-image: url(images/portfolio-4.jpg);">
+					<a href="https://github.com/lucasjotap/dataCorrelation/blob/main/Project/.ipynb_checkpoints/dataAnalysis-checkpoint.ipynb"
+						class="work" style="background-image: url(images/portfolio-4.jpg);">
 						<div class="desc">
 							<h3>Data Viz</h3>
 							<span></span>
@@ -319,13 +319,15 @@
 		</div>
 	</div>
 
+
+
 	<div id="fh5co-consult">
 		<div class="video fh5co-video" style="background-image: url(images/cover_bg_1.jpg);">
 			<div class="overlay"></div>
 		</div>
 		<div class="choose animate-box">
 			<h2>Contato</h2>
-			<form action="#">
+			<form onsubmit="sendEmail(); reset(); return false;">
 				<div class="row form-group">
 					<div class="col-md-6">
 						<input type="text" id="fname" class="form-control" placeholder="Nome">
@@ -348,6 +350,23 @@
 
 			</form>
 		</div>
+
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+		<script>
+			function sendEmail() {
+				Email.send({
+					SecureToken: "ef94c5aa-6f9f-456b-b73b-021ab1538b66",
+					To: 'br.onelinkbpo@gmail.com',
+					From: document.getElementById("email").value,
+					Subject: `A new message from ${document.getElementById("subject").value}`,
+					Body: document.getElementById("email").value
+				}).then(
+					message => alert(message));
+
+			}
+
+		</script>
 
 		<div id="fh5co-footer">
 			<div class="container">
